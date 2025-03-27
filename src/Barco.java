@@ -1,8 +1,4 @@
-public class Barco {
-    public float latitud;
-    public float longitud;
+public class Barco extends MedioTransporte {
     public String color;
-    public String nombre;
     public String tipoMotor;
-    public String medio;
 }
