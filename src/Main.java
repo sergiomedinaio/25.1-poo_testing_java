@@ -11,6 +11,7 @@ public class Main {
         automovil.nombre = "Pequeño bandido";
 
         automovil.tocarBocina();
+        automovil.trasladar(122.1f, 122.1f);
 
     }
 }
