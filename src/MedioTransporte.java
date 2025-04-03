@@ -9,6 +9,6 @@ public class MedioTransporte {
             float latitud,
             float longitud
     ){
-        System.out.println("trasladando");
+        System.out.println("trasladando: " + latitud + ", " + longitud);
     }
 }

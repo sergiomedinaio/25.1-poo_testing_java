@@ -12,6 +12,7 @@ public class Main {
 
         automovil.tocarBocina();
         automovil.trasladar(122.1f, 122.1f);
+        automovil.trasladar(122.1f, 122.1f);
 
     }
 }
