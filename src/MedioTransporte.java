@@ -1,14 +1,10 @@
 //clase generalizada
-public class MedioTransporte {
-    public float latitud;
-    public float longitud;
+public class MedioTransporte extends Transporte{
     public String nombre;
     public String medio;
 
-    public void trasladar(
-            float latitud,
-            float longitud
-    ){
-        System.out.println("trasladando: " + latitud + ", " + longitud);
+    @Override
+    public void trasladar(float latitud, float longitud) {
+        System.out.println("Trasladando medio transporte: " + latitud + " " + longitud);
     }
 }

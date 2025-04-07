@@ -3,6 +3,9 @@
 public class Main {
     public static void main(String[] args) {
         Automovil automovil = new Automovil();
+        //Transporte transporte = new Automovil();
+        //transporte.color = "";
+
         automovil.color = "red";
         automovil.cantidadRuedas = 4;
         automovil.latitud = 121.1f;
