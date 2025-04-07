@@ -1,17 +1,19 @@
 public class Automovil extends MedioTransporte {
-    public int cantidadRuedas;
-    public String color;
+    private int cantidadRuedas;
+    private String color;
 
     public void tocarBocina() {
         System.out.println("Estoy tocando bocina...");
     }
 
     public void trasladar(float latitudFinal, float longitudFinal) {
-        if(latitudFinal > latitud) {
-            latitud = (float) (latitud + 10.0);
-        } else if (latitudFinal < latitud) {
-            latitud = (float) (latitud - 10.0);
+        if(latitudFinal > this.getLatitud()) {
+            float newLatitud = (float) (this.getLatitud() + 10.0);
+            this.setLatitud(newLatitud);
+        } else if (latitudFinal < this.getLatitud()) {
+            float newLatitud = (float) (this.getLatitud() - 10.0);
+            this.setLatitud(newLatitud);
         }
-        super.trasladar(latitud, longitud);
+        super.trasladar(this.getLatitud(), this.getLongitud());
     }
 }
