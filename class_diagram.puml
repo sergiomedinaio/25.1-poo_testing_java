@@ -1,0 +1,45 @@
+@startuml
+abstract class Transporte {
+- float latitud
+- float longitud
++ void setLongitud(float)
++ float getLongitud()
++ void setLatitud(float)
++ float getLatitud()
++ {abstract}void trasladar(float,float)
+}
+
+
+class Automovil {
+- int cantidadRuedas
+- String color
++ void tocarBocina()
++ void trasladar(float,float)
+}
+
+
+class Avion {
+}
+class MedioTransporte {
+- String nombre
+- String medio
++ void trasladar(float,float)
+}
+
+
+class Main {
++ {static} void main(String[])
+}
+
+class Barco {
++ String color
++ String tipoMotor
+}
+
+
+
+MedioTransporte <|-- Automovil
+MedioTransporte <|-- Avion
+Transporte <|-- MedioTransporte
+MedioTransporte <|-- Barco
+@enduml
