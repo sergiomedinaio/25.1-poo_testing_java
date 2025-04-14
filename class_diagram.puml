@@ -41,10 +41,16 @@ class Barco {
 + String tipoMotor
 }
 
+class Bicicleta {
+- int cantidadRuedas
++ int getCantidadRuedas()
++ void setCantidadRuedas(int)
+}
 
 
 MedioTransporte <|-- Automovil
 MedioTransporte <|-- Avion
 Transporte <|-- MedioTransporte
 MedioTransporte <|-- Barco
+MedioTransporte <|-- Bicicleta
 @enduml

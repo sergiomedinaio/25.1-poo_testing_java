@@ -8,4 +8,4 @@ Medios de transportes soportados por el sistema
 - [x] Automovil 
 - [x] Avion 
 - [x] Barco
-- [ ] Bicicleta
+- [x] Bicicleta
