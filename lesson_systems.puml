@@ -1,0 +1,18 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Libro {
+
+}
+
+class LibroCalificaciones {
+   String nombreDelCurso
+   void establecerNombreCurso(String nombre)
+   String obtenerNombreDelCurso()
+   void mostrarMensaje()
+}
+
+'Herencias del sistema
+Libro <|-- LibroCalificaciones
+
+@enduml
