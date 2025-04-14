@@ -19,7 +19,12 @@ class Automovil {
 
 
 class Avion {
+- Boolean disponibilidad
++ Boolean getDisponibilidad()
++ void setDisponibilidad(Boolean)
 }
+
+
 class MedioTransporte {
 - String nombre
 - String medio
